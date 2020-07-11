@@ -1,0 +1,282 @@
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 27, in upload
+    imgcv = cv2.imread(img)
+SystemError: <built-in function imread> returned NULL without setting an error
+"POST /html/upload/ HTTP/1.1" 500 67440
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 27, in upload
+    imgcv = cv2.imread(img, 1)
+SystemError: <built-in function imread> returned NULL without setting an error
+"POST /html/upload/ HTTP/1.1" 500 67446
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 30, in upload
+    gray = get_grayscale(imgcv)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 46, in get_grayscale
+    return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.error: OpenCV(4.3.0) /Users/travis/build/skvark/opencv-python/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+"POST /html/upload/ HTTP/1.1" 500 71681
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view uploads.views.upload didn't return an HttpResponse object. It returned None instead.
+"POST /html/upload/ HTTP/1.1" 500 58843
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view uploads.views.upload didn't return an HttpResponse object. It returned None instead.
+"POST /html/upload/ HTTP/1.1" 500 58827
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 36, in upload
+    grayname = fs.save(img.name, gray)  # returns unique name
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 271, in _save
+    for chunk in content.chunks():
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/utils.py", line 16, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'numpy.ndarray' object has no attribute 'read'
+"POST /html/upload/ HTTP/1.1" 500 86551
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 36, in upload
+    grayname = fs.save(img.name, gray)  # returns unique name
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 271, in _save
+    for chunk in content.chunks():
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/utils.py", line 16, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'numpy.ndarray' object has no attribute 'read'
+"POST /html/upload/ HTTP/1.1" 500 86559
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 36, in upload
+    grayname = fs.save(img.name, gray)  # returns unique name
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 271, in _save
+    for chunk in content.chunks():
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/utils.py", line 16, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'numpy.ndarray' object has no attribute 'read'
+"POST /html/upload/ HTTP/1.1" 500 86503
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 43, in upload
+    grayname = fs.save("saved.jpg", gray)  # returns unique name
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 271, in _save
+    for chunk in content.chunks():
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/utils.py", line 16, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'numpy.ndarray' object has no attribute 'read'
+"POST /html/upload/ HTTP/1.1" 500 86215
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 42, in upload
+    gray = get_grayscale(path)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 61, in get_grayscale
+    return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+TypeError: Expected Ptr<cv::UMat> for argument 'src'
+"POST /html/upload/ HTTP/1.1" 500 72527
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 51, in upload
+    grayname = fs.save("saved.jpg", gray)  # returns unique name
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 271, in _save
+    for chunk in content.chunks():
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/utils.py", line 16, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'numpy.ndarray' object has no attribute 'read'
+"POST /html/upload/ HTTP/1.1" 500 87305
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 51, in upload
+    saved = cv2.imwrite(settings.BASE_DIR + "/media/_" + gray)
+numpy.core._exceptions.UFuncTypeError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U64'), dtype('<U64')) -> dtype('<U64')
+"POST /html/upload/ HTTP/1.1" 500 71212
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 52, in upload
+    grayname = fs.save("saved.jpg", saved)  # returns unique name
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 271, in _save
+    for chunk in content.chunks():
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/utils.py", line 16, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'bool' object has no attribute 'read'
+"POST /html/upload/ HTTP/1.1" 500 87483
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view uploads.views.upload didn't return an HttpResponse object. It returned None instead.
+"POST /html/upload/ HTTP/1.1" 500 58332
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view uploads.views.upload didn't return an HttpResponse object. It returned None instead.
+"POST /html/upload/ HTTP/1.1" 500 58332
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 53, in upload
+    grayname = fs.save("saved.jpg", gray)  # returns unique name
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/storage.py", line 271, in _save
+    for chunk in content.chunks():
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/files/utils.py", line 16, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'numpy.ndarray' object has no attribute 'read'
+"POST /html/upload/ HTTP/1.1" 500 87623
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 49, in upload
+    gray = cv_methods.thresholding(cvimg)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/cv_methods.py", line 15, in thresholding
+    return cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+cv2.error: OpenCV(4.3.0) /Users/travis/build/skvark/opencv-python/opencv/modules/imgproc/src/thresh.cpp:1529: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'threshold'
+
+"POST /html/upload/ HTTP/1.1" 500 75192
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 49, in upload
+    gray = cv_methods.deskew(cvimg)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/cv_methods.py", line 39, in deskew
+    angle = cv2.minAreaRect(coords)[-1]
+cv2.error: OpenCV(4.3.0) /Users/travis/build/skvark/opencv-python/opencv/modules/imgproc/src/convhull.cpp:143: error: (-215:Assertion failed) total >= 0 && (depth == CV_32F || depth == CV_32S) in function 'convexHull'
+
+"POST /html/upload/ HTTP/1.1" 500 75593
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 49, in upload
+    gray = cv_methods.deskew(cvimg)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/cv_methods.py", line 39, in deskew
+    angle = cv2.minAreaRect(coords)[-1]
+cv2.error: OpenCV(4.3.0) /Users/travis/build/skvark/opencv-python/opencv/modules/imgproc/src/convhull.cpp:143: error: (-215:Assertion failed) total >= 0 && (depth == CV_32F || depth == CV_32S) in function 'convexHull'
+
+"POST /html/upload/ HTTP/1.1" 500 75609

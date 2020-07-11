@@ -1,3 +1,7 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }
