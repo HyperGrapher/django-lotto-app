@@ -280,3 +280,133 @@ Traceback (most recent call last):
 cv2.error: OpenCV(4.3.0) /Users/travis/build/skvark/opencv-python/opencv/modules/imgproc/src/convhull.cpp:143: error: (-215:Assertion failed) total >= 0 && (depth == CV_32F || depth == CV_32S) in function 'convexHull'
 
 "POST /html/upload/ HTTP/1.1" 500 75609
+Not Found: /media/saved.jpg
+"GET /media/saved.jpg HTTP/1.1" 404 1805
+Not Found: /media/processes/saved.jpg
+"GET /media/processes/saved.jpg HTTP/1.1" 404 1835
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 44, in upload
+    img = request.FILES["image"]
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image'
+"POST /html/upload/ HTTP/1.1" 500 75629
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 52, in upload
+    cvimg = cv2.imread(Image(uppath))  # returns image
+TypeError: 'module' object is not callable
+"POST /html/upload/ HTTP/1.1" 500 68897
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 52, in upload
+    cvimg = cv2.imread(Image.open(uppath))  # returns image
+SystemError: <built-in function imread> returned NULL without setting an error
+"POST /html/upload/ HTTP/1.1" 500 69039
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 54, in upload
+    res = pytesseract.image_to_string(gray, lang='tr')
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 360, in image_to_string
+    }[output_type]()
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 359, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 270, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 246, in run_tesseract
+    raise TesseractError(proc.returncode, get_errors(error_string))
+pytesseract.pytesseract.TesseractError: (1, 'Error opening data file /usr/local/share/tessdata/tr.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'tr\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+"POST /html/upload/ HTTP/1.1" 500 92122
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 54, in upload
+    res = pytesseract.image_to_string(gray, lang='tr')
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 360, in image_to_string
+    }[output_type]()
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 359, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 270, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 246, in run_tesseract
+    raise TesseractError(proc.returncode, get_errors(error_string))
+pytesseract.pytesseract.TesseractError: (1, 'Error opening data file /usr/local/share/tessdata/tr.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'tr\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+"POST /html/upload/ HTTP/1.1" 500 92122
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 54, in upload
+    res = pytesseract.image_to_string(gray, lang='tr')
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 360, in image_to_string
+    }[output_type]()
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 359, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 270, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/pytesseract/pytesseract.py", line 246, in run_tesseract
+    raise TesseractError(proc.returncode, get_errors(error_string))
+pytesseract.pytesseract.TesseractError: (1, 'Error opening data file /usr/local/share/tessdata/tr.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'tr\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+"POST /html/upload/ HTTP/1.1" 500 92122
+Internal Server Error: /html/upload/
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/src/uploads/views.py", line 54, in upload
+    img = request.FILES["image"]
+  File "/Users/burak/Projects/Ticari/lottoapp-200713/backend/venv/lib/python3.7/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image'
+"POST /html/upload/ HTTP/1.1" 500 75643
