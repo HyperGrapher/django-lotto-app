@@ -1,13 +1,14 @@
 media/
+*.log
 *.jpg
 *.jpeg
 *.png
 *.gif
 # Byte-compiled / optimized / DLL files
-__pycache__/
+# __pycache__/
+**/__pycache__/ 
 *.py[cod]
 *$py.class
-
 # C extensions
 *.so
 
