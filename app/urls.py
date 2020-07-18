@@ -24,7 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-# TODO: FIND a solution for image storage
-# Save images for only in debug mode
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# public media url where images are saved and served. 
+# Not recommended in production. 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

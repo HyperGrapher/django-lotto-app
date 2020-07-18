@@ -1,7 +1,7 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 from django.conf import settings
+from django.shortcuts import render
 import cv2
 import pytesseract
 from . import cv_methods
